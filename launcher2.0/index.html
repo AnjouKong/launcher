@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cn">
+  
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalaspanle=no" />
+    <title>index</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <style type="text/css">
+        header {
+         padding: 20px;
+        }
+        header h3{
+          font-size: 2rem;
+          color: #333;
+          margin-bottom: 10px;
+        }
+        header a{
+          font-size: 1.8rem;
+          width: 100%;
+          display: block;
+          margin-bottom: 10px;
+        }
+      
+    </style>
+</head>
+  
+<body style="background: url('images/boot.jpg') no-repeat; background-size: 100% 100%;">
+    <div class="welcome"><a href="indexHome.html">
+      <img src="images/welcome1.png" height="70%" style="margin-top: 7.5%" /></a>
+    </div>
+    
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+          if(screen.width > screen.height){ 
+            // alert("横屏状态！")
+          }else{
+            alert("当前是竖屏状态，请开启横屏模式！")
+          };
+          // 开机后2秒跳转
+          setTimeout(function(){
+                $(".welcome").show();
+          },2000);
+
+          $("body").click(function(){
+            $(".welcome").show();
+          })
+      });
+      
+    </script>
+
+    
+</body>
+
+</html>

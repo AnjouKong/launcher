@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cn">
+  
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalaspanle=no" />
+    <title>index</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <style type="text/css">
+      
+      
+    </style>
+</head>
+  
+<body style="background: url(images/wKgQUFjfTP-APPbjAAFF1Whju3M979.jpg) no-repeat 100%;">
+    <header>
+        <div class="weather">
+            <p><span>2日星期六</span><span>晴</span></p>
+            <p>22℃ ~ 27℃</p>
+        </div>
+        <div class="date">
+            <img src="images/date.png" />
+            <div class="dateText">
+                <p>2017/9/4</p>
+                <p><span>周一</span><span>10:00</span></p>
+            </div>
+            
+        </div>
+    </header>
+    <div id="fullSlide" class="fullSlide">
+        
+        <div class="popUp">
+            <ul>
+              <li class="dropdown">
+                <span><img src="images/dianshi.png"/>电视</span>
+                <div class="dropdown-content">
+                  <p><a href="movieList.html">最新电视</a></p>
+                  <p><a href="movieList.html">热门影视</a></p>
+                </div>
+              </li>
+              <li class="dropdown">
+                <span><img src="images/jiudian.png"/>酒店介绍</span>
+                <div class="dropdown-content">
+                  <p><a href="imgText.html">涵碧楼</a></p>
+                  <p><a href="imgText.html">客房介绍</a></p>
+                  <p><a href="imgText.html">餐饮介绍</a></p>
+                  <p><a href="imgText.html">KTV</a></p>
+                </div>
+              </li>
+              <li class="dropdown">
+                <span><img src="images/tuijian.png"/>特别推荐</span>
+                <div class="dropdown-content">
+                  <p><a href="movieList.html">高清影视</a></p>
+                  <p><a href="#">2</a></p>
+                </div>
+              </li>
+              <li class="dropdown">
+                <span><img src="images/bofang.png"/>高清影院</span>
+                <div class="dropdown-content">
+                  <p><a href="movieList.html">最新电影</a></p>
+                  <p><a href="movieList.html">热门电影</a></p>
+                </div>
+              </li>
+              <li class="dropdown">
+                <span><img src="images/lvyou.png"/>互动旅游</span>
+                <div class="dropdown-content">
+                  <p><a href="imgText3.html">休闲娱乐</a></p>
+                  <p><a href="#">2</a></p>
+                </div>
+              </li>
+              <li class="dropdown">
+                <span><img src="images/fuwu.png"/>在线服务</span>
+                <div class="dropdown-content">
+                  <p><a href="#">酒店管家</a></p>
+                  <p><a href="#">2</a></p>
+                </div>
+              </li>
+            </ul>
+        </div>
+        <div class="hd">
+            <p class="customBG"><marquee id="affiche" align="left" behavior="scroll" bgcolor="" direction="left" height="100%" width="100%" loop="-1" scrollamount="10" scrolldelay="1" onMouseOut="this.start()" onMouseOver="this.stop()">尊敬的来宾，欢迎您下榻***酒店，我们将竭诚为您服务</marquee></p>
+            
+        </div>
+    </div>
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+          if(screen.width > screen.height){ 
+            // alert("横屏状态！")
+          }else{
+            alert("当前是竖屏状态，请开启横屏模式！")
+          }
+          $(".dropdown").on("click",function(){
+            $(this).find("span").addClass("sel");
+            $(this).siblings().find("span").removeClass("sel");
+            $(this).find(".dropdown-content").css("display","block");
+            $(this).siblings().find(".dropdown-content").css("display","none");
+          });
+          
+
+
+
+      });
+      
+    </script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Language" content="zh-CN">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalaspanle=no" />
+  <title>index</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" />
+    </div>
+    <div class="weather">
+      <img src="images/sun.png" />
+      <p>10°~20°</p>
+    </div>
+    <div class="timeDate">
+      <p>13 : 10</p>
+      <p>2018/10/10</p>
+    </div>
+  </header>
+  <ul class="nav">
+    <li data-item="navLogo" class="navLogoImg"><img src="images/navLogo.png" /></li>
+    <li data-item="navMovie"><img src="images/movie.png" /><span>高清影视</span></li>
+    <li data-item="navHotel"><img src="images/hotel.png" /><span>酒店介绍</span></li>
+    <li data-item="navTourism"><img src="images/tourism.png" /><span>周边旅游</span></li>
+    <li data-item="navRoom"><img src="images/room.png" /><span>智慧客房</span></li>
+  </ul>
+  <span class="navArrow"><img src="images/arrow.png" width="50%" /></span>
+  <div class="program">
+    <div class="navLogo">
+      <img src="images/home.png" width="100%" />
+    </div>
+    <div class="navMovie">
+      <ul class="itemInfo">
+        <li>
+          <a href="movieList.html">
+            <img src="images/movie/movie4.png" />
+            <p>高清影视</p>
+          </a>
+          <a href="movieDetails.html">
+            <img src="images/movie/movie2.png" />
+            <p>加勒比海盗</p>
+          </a>
+        </li>
+        <li>
+          <a href="topic.html">
+            <img src="images/movie/movie8.png" />
+            <!-- <img src="images/topicBG.jpg" /> -->
+            <p>动漫专题</p>
+          </a>
+          <a href="movieDetails.html">
+            <img src="images/movie/movie6.png" />
+            <p>神奇女侠</p>
+          </a>
+        </li>
+        <li>
+          <a href="movieDetails.html">
+            <img src="images/movie/movie3.png" />
+            <p>赛车总动员3</p>
+          </a>
+          <a href="movieDetails.html">
+            <img src="images/movie/movie7.png" />
+            <p>银翼杀手2049</p>
+          </a>
+        </li>
+        <li>
+          <a href="movieDetails.html">
+            <img src="images/movie/movie1.png" />
+            <p>美女与野兽</p>
+          </a>
+          <a href="movieDetails.html">
+            <img src="images/movie/movie5.png" />
+            <p>银河护卫队</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navHotel">
+      <ul class="itemInfo noScroll">
+        <li>
+          <a href="secondary.html?type=about">
+            <img src="images/hotel/hotel1.png" />
+            <p>关于我们</p>
+          </a>
+          <a href="secondary.html?type=fitness">
+            <img src="images/hotel/hotel2.png" />
+            <p>休闲健身</p>
+          </a>
+        </li>
+        <li>
+          <a href="secondary.html?type=fitness">
+            <img src="images/hotel/hotel3.png" />
+            <p>餐饮</p>
+          </a>
+          <a href="secondary.html?type=fitness">
+            <img src="images/hotel/hotel4.png" />
+            <p>娱乐</p>
+          </a>
+        </li>
+        <li>
+          <a href="secondary.html?type=fitness">
+            <img src="images/hotel/hotel5.png" />
+            <p>客房</p>
+          </a>
+          <a href="secondary.html?type=fitness">
+            <img src="images/hotel/hotel6.png" />
+            <p>SPA</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navTourism">
+      <ul class="itemInfo noScroll">
+        <li>
+          <a href="secondary.html?type=charm">
+            <img src="images/tourism/tourism1.png" />
+            <p>城市魅力</p>
+          </a>
+          <a href="secondary.html?type=specialty">
+            <img src="images/tourism/tourism4.png" />
+            <p>地方特产</p>
+          </a>
+        </li>
+        <li>
+          <a href="secondary.html?type=scenic">
+            <img src="images/tourism/tourism2.png" />
+            <p>景区景点</p>
+          </a>
+        </li>
+        <li>
+          <a href="secondary.html?type=food">
+            <img src="images/tourism/tourism3.png" />
+            <p>特色美食</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navRoom">
+      <ul class="itemInfo noScroll">
+        <li>
+          <a href="secondary.html?type=worldTime">
+            <img src="images/room/room1.png" />
+            <p>世界时间</p>
+          </a>
+          <a href="secondary.html?type=smart">
+            <img src="images/room/room5.png" />
+            <p>客控</p>
+          </a>
+        </li>
+        <li>
+          <a href="secondary.html?type=weather">
+            <img src="images/room/room2.png" />
+            <p>天气</p>
+          </a>
+        </li>
+        <li>
+          <a href="secondary.html?type=exchangeRate">
+            <img src="images/room/room4.png" />
+            <p>汇率</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if(screen.width > screen.height){
+        // alert("横屏状态！")
+      }else{
+        alert("当前是竖屏状态，请开启横屏模式！")
+      };
+      $(".nav").on("click", "li", function(){
+        $(this).addClass("on").siblings().removeClass("on");
+        $(".program > div").hide();
+        var dataItem = $(this).attr("data-item");
+        $(".program").find("."+dataItem).show();
+
+        if($(this).hasClass("on")){
+          var imgList = $(".nav li").find("img");
+          for(var i = 0; i < imgList.length; i++){
+            var imgReset;
+            if(imgList.eq(i).attr("src").split("_").length > 1){
+              imgReset = imgList.eq(i).attr("src").split("_")[0]+".png";
+            }else{
+              imgReset = imgList.eq(i).attr("src").split("_")[0];
+            }
+            imgList.eq(i).attr("src",imgReset);
+          }
+          var imgSrc = $(this).find("img").attr("src").split(".png")[0]+"_";
+          $(this).find("img").attr("src",imgSrc+".png");
+        }
+      });
+      $(".nav li:nth-child(1)").trigger("click");
+    });
+
+  </script>
+</body>
+</html>

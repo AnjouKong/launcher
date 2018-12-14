@@ -1,0 +1,404 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;
+}
+html,body {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+	font-size:62.5%;
+	font-family:'Microsoft YaHei',Arial, Helvetica, sans-serif;
+	background: url(../images/bg.jpg) no-repeat 100%;
+}
+img {
+	border:0;
+}
+a {
+	text-decoration:none;
+	color:#333;
+}
+a:hover {
+	color:#1974A1;
+}
+header{
+	width: 100%;
+	height: 17%;
+	padding-top: 1%;
+    color: #fff;
+    font-size: 1.4rem;
+}
+#footer {
+	text-align:center;
+}
+/*首页*/
+.fullSlide {
+	width: 100%;
+    height: 83%;
+	position:relative;
+	overflow:hidden;
+}
+
+.fullSlide .tempWrap{
+	width: 100%;
+	height: 80%;
+}
+.fullSlide .bd {
+	position:relative;
+	z-index:0;
+    width: 100%;
+	height: 100%;
+}
+.fullSlide .bd ul {
+	width:100%;
+	height: 100%;
+	float: left;
+}
+.fullSlide .bd ul li {
+	width: 23%;
+	height: 100%;
+	float: left;
+	padding: 0 3px;
+	overflow:hidden;
+	text-align:center;
+}
+.fullSlide .bd ul li a {
+	height: 100%;
+	display:block;
+	position: relative;
+}
+.fullSlide .bd ul li.widBig{
+	width: 31%;
+}
+.fullSlide .bd ul li.widMid{
+	width: 27%;
+}
+.fullSlide .bd ul li.widBig a,.fullSlide .bd ul li.widMid a{
+	width: 100%;
+	height: 50%;
+}
+.fullSlide .bd ul li.widBig a:first-child,.fullSlide .bd ul li.widMid a:first-child{
+	padding-bottom: 3px;
+}
+.fullSlide .bd ul li.widBig a:last-child,.fullSlide .bd ul li.widMid a:last-child{
+	padding-top: 3px;
+}
+.fullSlide .bd ul li a img{
+	width: 100%;
+	height: 100%;
+}
+.fullSlide .bd ul li a p{
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	color: #ddd;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+.fullSlide .bd ul li.widBig a:first-child p,.fullSlide .bd ul li.widMid a:first-child p{
+	    bottom: 3px;
+}
+.fullSlide .hd {
+    left: 50%;
+    margin-left: -212px;  
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.fullSlide .hd ul {
+	bottom: 25%;
+	position: absolute;
+}
+.fullSlide .hd ul li {
+	float:left;
+	display:inline;
+	cursor:pointer;    
+	color: #5d5d5d;
+    font-size: 1.4rem;
+    width: 85px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+.fullSlide .hd ul .on {
+	color: #fff;
+    background: #ccc;
+}
+.weather{
+	float: right;
+	margin-right: 5%;
+	text-align:center;
+}
+.weather p span:first-child{
+	margin-right:10px;
+}
+.date {
+	float:right;
+	width: 130px;
+	height: 35px;
+	border-right: 1px solid #fff;
+    margin-right: 5%;
+}
+.date img {
+	width: 35px;
+    float: left;
+    margin-top: 2px;
+}
+.date .dateText{
+	width: 90px;
+	text-align: center;
+	float: right;
+}
+.date .dateText p span:first-child{
+	margin-right:10px;
+}
+
+/*电影列表*/
+.movieSlide {
+	width: 100%;
+    height: 100%;
+	position:relative;
+	overflow:hidden;
+}
+.movieSlide .bd {
+	position:relative;
+	z-index:0;
+    width: 80%;
+	height: 100%;
+	float: right;
+}
+.movieSlide .bd ul {
+	width:100%;
+	height: 100%;
+}
+.movieSlide .bd ul li {
+	width:100%;
+	height: 100%;
+	overflow:hidden;
+	text-align:center;
+}
+.movieSlide .bd ul li h3{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	text-align: left;
+	padding: 0 14px;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: normal;
+}
+.movieSlide .bd ul li h3 span{
+	float: right;	
+	font-size: 1.2rem;	
+}
+.movieSlide .bd ul li ul.lists{
+	width: 100%;
+	height: calc(100% - 45px);
+	overflow: scroll;
+	padding: 0 7px;
+}
+.movieSlide .bd ul li ul.lists li{
+	width: 25%;
+	height: 150px;
+	float: left;
+	padding: 0 7px;
+	margin-bottom: 6px;
+}
+.movieSlide .bd ul li ul.lists li a{
+	position: relative;
+}
+.movieSlide .bd ul li ul.lists li img{
+	width: 100%;
+	height: 100%;
+}
+.movieSlide .bd ul li ul.lists li a p{
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	color: #ddd;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.movieSlide .hd {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+	float: left;
+    overflow: hidden;
+	padding-top: 35px;
+	font-size: 1.4rem;
+	color: #f6f6f6;
+	border-right: 1px solid #fff;
+}
+.movieSlide .hd ul {
+	width: 100%;
+	height: 100%;
+    position: absolute;
+}
+.movieSlide .hd ul li {
+	margin: 0 auto;
+	cursor:pointer;    
+    height: 35px;
+    line-height: 31px;
+    text-align: center;
+    border-radius: 5px;
+}
+.movieSlide .hd ul .on {
+	color: #fff;
+    border: 2px solid #fff;
+}
+/* 图文页展示 */
+.imgText {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.imgText .bd {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 0;
+}
+.imgText .bd ul {
+	width: 100%;
+	height: 100%;
+}
+.imgText .bd ul li {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.imgText .bd ul li img {
+	width: 100%;
+	height: 100%;
+}
+.imgText .hd {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	text-align: center;
+}
+.imgText .hd ul {
+	overflow: hidden;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	height: 5px;
+	background-color: rgba(51,51,51,0.5);
+}
+.imgText .hd ul li {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+.imgText .hd ul .on {
+	background: #FF4000;
+	color: #ff4000;
+}
+/* 电影详情 */
+.movieDetails{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.movieOn{
+	width: 100%;
+	height: 60%;
+	border-bottom: 2px solid #999;
+	display: block;
+	padding: 20px 30px 10px;
+}
+.onLeft{
+	width: 120px;
+	height: 100%;
+	float: left;
+	margin-right: 30px;
+}
+.onRight{
+	float: left;
+	width: calc(100% - 150px);
+	height: 100%;
+    color: #fdfbfb;
+}
+.onRight h3{
+	width: 100%;
+	height: 27px;、
+	text-align: left;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+.onRight h3 span{
+	float: right;	
+	font-size: 1.4rem;	
+}
+.onRight p{
+	font-size: 1.4rem;
+	margin-bottom: 3px;
+	overflow: hidden;
+}
+.onRight p label{
+	width: 75px;
+	float: left;
+}
+.onRight p span{
+	width: calc(100% - 75px);
+    float: left;
+}
+.onRight button{
+	width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: rgba(0,0,0,0);
+    margin-top: 5px;
+}
+.onRight button a{
+    color: #fff;
+}
+.moviedown{
+	width: 100%;
+	height: 40%;
+	overflow: hidden; 
+	padding: 10px 20px;
+}
+.moviedown li{
+	float: left;
+	width: 85px;
+	height: 100%;
+	overflow-x: scroll;
+    overflow-y: hidden;
+	margin-right: 10px;
+}
+.moviedown  li a{
+	position: relative;
+}
+.moviedown  li img{
+	width: 100%;
+	height: 100%;
+}
+.moviedown  li a p{
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	color: #ddd;
+    font-size: 1.2rem;
+    line-height: 30px;
+    text-align: center;
+}
